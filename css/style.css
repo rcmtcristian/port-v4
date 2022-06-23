@@ -375,7 +375,7 @@ body.homepage.is-preload #header:after {
 }
 
 .galaxy-text::before {
-  background-image: url('../images/ezgif.com-gif-maker\ \(29\).gif');
+  background-image: url('https://i.postimg.cc/htvysfzX/wave.gif');
  height: 3.7em;
  background-position: 18% 19%;
   mix-blend-mode: lighten;
@@ -566,18 +566,9 @@ body.homepage.is-preload #header:after {
   }
 
    
-/temp/
-
-
-
-
-
-
-
-
-/* Box */
-
-
+#top .blob-btn {
+  color: rgb(44, 99, 94);
+}
 
 
 
@@ -678,6 +669,8 @@ body.homepage.is-preload #header:after {
       width: 66.66667%;
     }
 
+   
+
 
 /******************************************
 /* LAYOUT skills
@@ -759,14 +752,14 @@ section.resume-section .resume-section-content {
 .workflow li {
   list-style-type:circle;
   
-
+s
 }
 
 /******************************************
 /* LAYOUT /*projects*/
 /*******************************************/
 #portfolio .container {
-  padding-top: 10em;
+  padding-top: 8em;
 }
 
 #portfolio .container h2 {
@@ -1245,11 +1238,6 @@ button::-moz-focus-inner {
 /* LAYOUT footer
 ************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-
 #contact-2{
  
   display: flex;
@@ -1271,7 +1259,7 @@ button::-moz-focus-inner {
 
 
 .contact-links {
-  background-image: url('../images/ezgif.com-gif-maker\ \(29\).gif');
+  background-image: url('https://i.postimg.cc/kX4BgmRQ/output-onlinegiftools-2.gif');
   background:
     radial-gradient(
       circle at 55% 92%, rgb(44, 99, 94)1 0 12%, transparent 12.2%
@@ -1286,7 +1274,11 @@ button::-moz-focus-inner {
       circle at 0% 0%, rgb(44, 99, 94) 0 40%, transparent 40.2%
     ), 
     rgb(44, 99, 94);
-  border-radius: 10px 0 0 10px;
+  
+  background-position: 18% 19%;
+  filter: blur();
+  background-size: cover;
+
 }
 
 .contact-form-wrapper {
@@ -1333,7 +1325,7 @@ button::-moz-focus-inner {
 }
 
 .link {
-
+ 
   margin: 10px;
   cursor: pointer;
   font-size: 1em;
@@ -1344,6 +1336,7 @@ button::-moz-focus-inner {
 }
 .links img {
   margin-right: 2px;
+  padding: 5px;
 }
 
 .links > .link > a {
@@ -1832,8 +1825,13 @@ footer {
         height: 24em;
         margin: 0;
     }
+    
 }
-
+@media (min-width: 980px)  {
+  #top .row  .col-1  {
+    padding-left: 9em;
+    } 
+}
 
 @media screen and (max-width: 980px) {
   .row {
@@ -1858,6 +1856,8 @@ footer {
   .row>* {
       padding: 25px 0 0 25px;
   }
+
+  
 }
 
 
