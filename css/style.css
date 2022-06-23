@@ -420,7 +420,7 @@ body.homepage.is-preload #header:after {
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(44, 99, 94);
+  color: rgb(44, 99, 94)!important;
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
@@ -438,6 +438,7 @@ body.homepage.is-preload #header:after {
   top: 0;
   width: 100%;
   height: 100%;
+  color: rgb(44, 99, 94)!important;
   border: 2px solid rgb(44, 99, 94);
   border-radius: 30px;
 }
@@ -453,7 +454,7 @@ body.homepage.is-preload #header:after {
   border-radius: 30px;
 }
 .blob-btn:hover {
-  color: #fff;
+  color: #fff !important;
   border-radius: 30px;
 }
 .blob-btn:hover:after {
@@ -776,6 +777,41 @@ section.resume-section .resume-section-content {
 /******************************************
 /* LAYOUT /*projects*/
 /*******************************************/
+
+#portfolio .blob-btn > a {
+  color: rgb(44, 99, 94);  
+}
+
+
+.blob-btn:before  a{
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(44, 99, 94)!important;
+  border: 2px solid rgb(44, 99, 94);
+  border-radius: 30px;
+}
+.blob-btn:after a {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover a {
+  color: #fff !important;
+  border-radius: 30px;
+}
+
+
 #portfolio .container {
   padding-top: 8em;
 }
@@ -1372,7 +1408,7 @@ button::-moz-focus-inner {
   width: 45px;
   height: 45px;
   filter: 
-    hue-rotate(220deg)
+    
     drop-shadow(2px 4px 4px #0006);
   transition: 0.2s;
   user-select: none;
@@ -1387,9 +1423,9 @@ button::-moz-focus-inner {
 #contact-2 img:active {
   transform: scale(1.1, 1.1);
   filter: 
-    hue-rotate(220deg)
+ 
     drop-shadow(2px 4px 4px #222)
-    sepia(0.3);
+  
 }
 
 .form-item {
