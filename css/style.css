@@ -1942,13 +1942,11 @@ textarea:valid+label {
     width: 70px;
   }
   
-}        
+} 
 
-
-
-@media (max-width:376px) and (max-width:679px) {
+@media (min-width:376px) and (max-width:435px) {
   #header-wrapper {
-    margin-top: -50em;
+    margin-top: -43em;
     margin-bottom: 25em;
     padding-bottom: 5em;
 
@@ -1958,6 +1956,94 @@ textarea:valid+label {
     text-align: center;
     padding-left: 15px;
   }
+
+  #nav {
+		background-color: #ffffff;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		height: 7em;
+		line-height: 3.5em;
+	}
+
+  body.homepage #header:after {
+    content: '';
+    background: rgb(46, 77, 74);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 195%;
+    opacity: 0;
+    -moz-transition: opacity 2.5s ease-in-out;
+    -webkit-transition: opacity 2.5s ease-in-out;
+    -ms-transition: opacity 2.5s ease-in-out;
+    transition: opacity 2.5s ease-in-out;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+
+}
+
+
+
+@media (max-width:376px) and (max-width:679px) {
+  #header-wrapper {
+    margin-top: -47em;
+    margin-bottom: 25em;
+    padding-bottom: 5em;
+
+  }
+  #header-wrapper p {
+    width: 90%;
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  #nav {
+		background-color: #ffffff;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		height: 7em;
+		line-height: 3.5em;
+	}
+
+
+    
+  body.homepage #header:after {
+    content: '';
+    background: rgb(46, 77, 74);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 195%;
+    opacity: 0;
+    -moz-transition: opacity 2.5s ease-in-out;
+    -webkit-transition: opacity 2.5s ease-in-out;
+    -ms-transition: opacity 2.5s ease-in-out;
+    transition: opacity 2.5s ease-in-out;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  
 
   section.resume-section {
     min-height: 100vh;
@@ -2023,7 +2109,7 @@ textarea:valid+label {
   
 
 }
-@media screen and (max-width:376px) {
+@media screen and (max-width:320px) {
   #footer .row {
     margin-top: -3vh;
     margin-left: -45vw;
@@ -2061,7 +2147,7 @@ textarea:valid+label {
     left: 0;
     top: 0;
     width: 100%;
-    height: 185%;
+    height: 195%;
     opacity: 0;
     -moz-transition: opacity 2.5s ease-in-out;
     -webkit-transition: opacity 2.5s ease-in-out;
@@ -2151,7 +2237,6 @@ textarea {
   }
 
 
-  
 }
 
 
