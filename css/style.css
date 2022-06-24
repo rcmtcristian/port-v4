@@ -1995,6 +1995,9 @@ textarea:valid+label {
 
 
 
+
+
+
 @media (max-width:376px) and (max-width:679px) {
   #header-wrapper {
     margin-top: -47em;
@@ -2115,7 +2118,12 @@ textarea:valid+label {
     margin-left: -45vw;
     width: 90%;
   }
+  #header-wrapper {
+    margin-top: -40em;
+    margin-bottom: 25em;
+    padding-bottom: 5em;
 
+  }
   
 
   #header {
