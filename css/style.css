@@ -1362,9 +1362,8 @@ button::-moz-focus-inner {
   align-items: center;
 }
 
-#contact-2 a {
 
-}
+
 
 .contact-box {
   width: clamp(100px, 90%, 1000px);
