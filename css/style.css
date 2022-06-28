@@ -419,7 +419,7 @@ body.homepage.is-preload #header:after {
 .galaxy-text::before {
   background-image: url('https://i.postimg.cc/htvysfzX/wave.gif');
  height: 3.7em;
- background-position: 6% 6%;
+ background-position: 20% 1%;
   mix-blend-mode: lighten;
   content: '';
   position: absolute;
