@@ -868,7 +868,7 @@ section.resume-section .resume-section-content {
 }
 
 #portfolio .container h2 {
- margin-bottom: -3em;
+ margin-bottom: -1em;
 }
 
 .showcase {
@@ -1952,6 +1952,18 @@ textarea:valid+label {
     max-width: calc(100% - 50px);
     width: 70px;
   }
+
+  .button-two{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  .blob-btn {
+  margin-left: -6rem;
+  }
+
   
 } 
 
@@ -2006,7 +2018,7 @@ textarea:valid+label {
 
 
 
-
+/* 
 
 
 @media (max-width:376px) and (max-width:679px) {
@@ -2115,14 +2127,18 @@ textarea:valid+label {
   }
 
 
-  .button-two {
-    margin-left: -11vw;
+  .button-two{
+    display: inline-block;
+    width: 100%;
     text-align: center;
     border-radius: 30px;
   }
   
+  .blob-btn {
+   padding-right: 40px;
+  }
 
-}
+} */
 @media screen and (max-width:320px) {
   #footer .row {
     margin-top: -3vh;
