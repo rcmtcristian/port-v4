@@ -338,7 +338,7 @@ ul {
         .top-bar__brand {
           color: #ebebeb;
           text-decoration: none;
-          font-size: 50px;
+          font-size: 45px;
           text-transform: uppercase;
           text-align: center;
           transition: 0.25s;
@@ -608,6 +608,8 @@ body.homepage.is-preload #header:after {
   content: '';
   position: absolute;
   inset: 0;
+  font-family: OTF® Glusp;
+  src: local(".css/fonts/OTF® Glusp.ttf");
 }
 
 
@@ -2102,17 +2104,6 @@ textarea:valid+label {
    
   }
   
-  .top-bar {
-    display: flex;
-   min-height: 50px;
-    background: #000;
-    color: #ebebeb;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-   
-  }
-
   
 
 
@@ -2329,6 +2320,8 @@ textarea:valid+label {
     content: '';
     position: absolute;
     inset: 0;
+    font-family: OTF® Glusp;
+  src: local(".css/fonts/OTF® Glusp.ttf");
   }
   
     }
