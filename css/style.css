@@ -2139,7 +2139,7 @@ textarea:valid+label {
   }
 
 } */
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
   #footer .row {
     margin-top: -3vh;
     margin-left: -45vw;
@@ -2151,6 +2151,18 @@ textarea:valid+label {
     padding-bottom: 5em;
 
   }
+  #nav {
+		background-color: #ffffff;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		height: 7em;
+		line-height: 3.5em;
+	}
   
 
   #header {
@@ -2247,6 +2259,95 @@ textarea {
   margin-left: -5em;
  
 }
+
+  
+
+section.resume-section {
+  min-height: 100vh;
+}
+
+section.resume-section {
+  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.list-inline-item {
+  font-size: 3rem;
+  padding:0.2rem;
+}
+
+.section.resume-section {
+  width:50%;
+}
+
+
+.resume-section-content {
+  width: 100%;
+}
+
+
+
+
+.fab {
+  font-size: 1rem;
+}
+
+
+.dev-icons  {
+ width: 140%;
+ 
+}
+
+.floats {
+  margin-top: 17rem;
+  margin-left: -6rem;
+  float: right;
+  transform: rotate(25deg)
+}
+
+
+#header-wrapper {
+  margin-top: -47em;
+  margin-bottom: 25em;
+  padding-bottom: 5em;
+
+}
+#header-wrapper p {
+  width: 90%;
+  text-align: center;
+  padding-left: 15px;
+}
+
+#nav {
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  cursor: default;
+  height: 7em;
+  line-height: 3.5em;
+}
+
+
+
+.button-two{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.blob-btn {
+margin-left: -9rem;
+}
+
+
+  
 
 }
 
