@@ -2025,6 +2025,7 @@ textarea:valid+label {
   #header-wrapper {
     /* margin-top: -5em; */
     padding-bottom: -5em;
+   
 
   }
   #header-wrapper p {
@@ -2108,8 +2109,8 @@ textarea:valid+label {
     transform: rotate(25deg)
   }
   
-  
-   
+ 
+
   }
   
   
@@ -2243,6 +2244,7 @@ textarea:valid+label {
 
 .inner {
   width: 90%;
+
 }
  
   .water-text {
