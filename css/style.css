@@ -3,6 +3,21 @@
   box-sizing: border-box;
 }
 
+
+@font-face {
+  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
+  src:local("OTF® Glusp")
+      local( 'otf_gluspbold')
+       url('/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff2') format('woff2'),
+       url('/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff') format('woff');    
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+stylesheet.css
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -30,13 +45,11 @@ html {
 }
 
 strong {
-  font-family: OTF® Glusp;
-  src: local(".css/fonts/OTF® Glusp.ttf");
+  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
 
 h2 {
-  font-family: OTF® Glusp;
-  src: local(".css/fonts/OTF® Glusp.ttf");
+  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
 /******************************************
 /* BASE STYLES
@@ -343,8 +356,7 @@ ul {
           text-align: center;
           transition: 0.25s;
           margin-left: -2em;
-          font-family: OTF® Glusp;
-          src: local(".css/fonts/OTF® Glusp.ttf");
+          font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
         }
        
         .top-bar__social {
@@ -596,8 +608,7 @@ body.homepage.is-preload #header:after {
   color: #151515;
   font-weight: bolder;
   border-top-right-radius: 30%;
-  font-family: OTF® Glusp;
-  src: local(".css/fonts/OTF® Glusp.ttf");
+  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
 
 .water-text::before {
@@ -608,8 +619,7 @@ body.homepage.is-preload #header:after {
   content: '';
   position: absolute;
   inset: 0;
-  font-family: OTF® Glusp;
-  src: local(".css/fonts/OTF® Glusp.ttf");
+  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
 
 
@@ -936,10 +946,10 @@ hr {
       align-items: center;
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-top: 2rem;
+      
       padding-bottom: 2rem;
       max-width: 90rem;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       background-color: rgb(44, 99, 94);
     }
    .resume-section .resume-section-content {
@@ -966,9 +976,7 @@ hr {
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
-.floats {
-  float: right;
-}
+
 
 
 .resume-section .resume-section-content {
@@ -2095,7 +2103,7 @@ textarea:valid+label {
   }
   .floats {
     margin-top: 17rem;
-    margin-left: -13rem;
+    margin-left: -3rem;
     float: right;
     transform: rotate(25deg)
   }
@@ -2180,71 +2188,6 @@ textarea:valid+label {
 
   
 } 
-/* 
-@media (min-width:376px) and (max-width:435px) {
-  #header-wrapper {
-    
-    margin-bottom: 25em;
-    padding-bottom: 5em;
-
-  }
-
-
-  #header-wrapper p {
-    width: 90%;
-    text-align: center;
-    padding-left: 15px;
-  }
-
-  
-  #header {
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color: #fff;
-    text-align: center;
-    padding: 1.5em 0 -2em 0;
-    cursor: default;
-   
-    
-  }
-  
-    #header:before {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      height: 90%;
-
-      
-    }
-
-
-  body.homepage #header:after {
-    content: '';
-    background: rgb(46, 77, 74);
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
- 
-    opacity: 0;
-    -moz-transition: opacity 2.5s ease-in-out;
-    -webkit-transition: opacity 2.5s ease-in-out;
-    -ms-transition: opacity 2.5s ease-in-out;
-    transition: opacity 2.5s ease-in-out;
-    -moz-transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-  }
-  
-
-  
-  
-} */
-
 
 @media only screen and (max-width:435px) {
   #footer .row {
@@ -2308,8 +2251,7 @@ textarea:valid+label {
     color: #151515;
     font-weight: bolder;
     border-top-right-radius: 30%;
-    font-family: OTF® Glusp;
-    src: local(".css/fonts/OTF® Glusp.ttf");
+    font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   }
   
   .water-text::before {
@@ -2320,8 +2262,7 @@ textarea:valid+label {
     content: '';
     position: absolute;
     inset: 0;
-    font-family: OTF® Glusp;
-  src: local(".css/fonts/OTF® Glusp.ttf");
+    font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   }
   
     }
@@ -2429,9 +2370,9 @@ section.resume-section {
 
 .floats {
   margin-top: 17rem;
-  margin-left: -3rem;
+  margin-left: -rem;
   float: right;
-  transform: rotate(25deg)
+  transform: rotate(25deg);
 }
 
 
