@@ -2241,18 +2241,22 @@ textarea:valid+label {
     vertical-align: middle;
   }
 
-
-
+.inner {
+  width: 90%;
+}
+ 
   .water-text {
     background: white;
     position: relative;
-    font-size: 1em;
-    padding: 2%;
+    font-size: 5rem;
+    padding: -2em -3em;
     color: #151515;
     font-weight: bolder;
     border-top-right-radius: 30%;
     font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   }
+
+
   
   .water-text::before {
     background-image: url('https://i.postimg.cc/htvysfzX/wave.gif');
