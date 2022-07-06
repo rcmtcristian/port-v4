@@ -2104,7 +2104,7 @@ textarea:valid+label {
   }
   .floats {
     margin-top: 17rem;
-    margin-left: -3rem;
+    margin-left: -4rem;
     float: right;
     transform: rotate(25deg)
   }
