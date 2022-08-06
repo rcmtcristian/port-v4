@@ -5,14 +5,55 @@
 
 
 @font-face {
-  font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
+  font-family:'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   src:local("OTF® Glusp")
       local( 'otf_gluspbold')
-       url('/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff2') format('woff2'),
-       url('/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff') format('woff');    
+       url('./fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff2') format('woff2'),
+       url('./fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff') format('woff');    
   font-weight: normal;
   font-style: normal;
 
+}
+
+@font-face {
+  font-family:'BebasNeue Regular';
+  src: local("Bebas Neue Regular") 
+        local('BebasNeue-Regular')
+         url('./fonts/webfontkit-20220806-202420/BebasNeue-Regular.woff2') format('woff2'),
+         url('./fonts/webfontkit-20220806-202420/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display:optional;
+}
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: local("BebasNeue-Bold") local('Bebas Neue Bold')
+    url('./fonts/webfontkit-20220806-202420/BebasNeue-Bold.woff2') format('woff2'),
+    url('./fonts/webfontkit-20220806-202420/BebasNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: local("BBebasNeue-Light") local('Bebas Neue Light')
+     url('./fonts/webfontkit-20220806-202420/BebasNeue-Light.woff2') format('woff2'),
+    url('./fonts/webfontkit-20220806-202420/BebasNeue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BebasNeue Thin';
+  src: local("BebasNeue-Thin") local('Bebas Neue Thin')
+   url('./fonts/webfontkit-20220806-202420/BebasNeue-Thin.woff2') format('woff2'),
+    url('./fonts/webfontkit-20220806-202420/BebasNeue-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style:normal;
+  font-display: swap;
 }
 
 
@@ -38,7 +79,12 @@ html {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Bebas Neue',
+    Plain,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -74,9 +120,10 @@ scroll-snap-align: start;
 
 body {
   margin: 0;
-  font-family: Plain, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-family: "BebasNeue-Regular";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.5;
   color: #fff;
   text-align: left;
@@ -775,9 +822,12 @@ hr {
  color: rgb(29, 155, 240);
 }
 
+
+
 #top {
   z-index: 100;
   padding: 8em 0;
+  
 }
 
   #top .image {
@@ -810,6 +860,11 @@ hr {
 		#top p {
 			font-size: 1.5em;
 			line-height: 1.75em;
+      font-family: "Bebas Neue Regular" ;
+  font-weight: normal;
+    font-style: normal;
+    
+
 		}
 
 			#top p a {
