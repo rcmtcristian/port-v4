@@ -5,58 +5,49 @@
 
 
 @font-face {
-  font-family:'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
-  src:local("OTF® Glusp")
-      local( 'otf_gluspbold')
-       url('.css/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff2') format('woff2'),
-       url('.css/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff') format('woff');    
+  font-family: 'otf_gluspbold';
+  src: url('/css/fonts/webfontkit-20220706-123828/otf_glusp-webfont.woff2') format('woff2'),
+    url('otf_glusp-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family:'BebasNeue Regular';
-  src: local("Bebas Neue Regular") 
-        local('BebasNeue-Regular')
-         url('/css/fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2'),
-         url('css/fonts/BebasNeue/BebasNeue-Regular.woff') format('woff');
+  font-family: 'Bebas Neue';
+  src: url('/css/fonts/BebasNeue/BebasNeue-Bold.woff2') format('woff2'),
+    url('/css/fonts/BebasNeue/BebasNeue-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display:optional;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'BebasNeue Bold';
-  src: local("BebasNeue-Bold") local('Bebas Neue Bold')
-    url('css/fonts/BebasNeue/BebasNeue-Bold.woff2') format('woff2'),
-    url('css/fonts/BebasNeue/BebasNeue-Bold.woff') format('woff');
+  font-family: 'Bebas Neue';
+  src: url('/css/fonts/BebasNeue/BebasNeue-Bold.woff2') format('woff2'),
+    url('/css/fonts/BebasNeue/BebasNeue-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BebasNeue Light';
-  src: local("BBebasNeue-Light") local('Bebas Neue Light')
-     url('css/fonts/BebasNeue/BebasNeue-Light.woff2') format('woff2'),
-    url('css/fonts/BebasNeue/BebasNeue-Light.woff') format('woff');
+  font-family: 'Bebas Neue';
+  src: url('/css/fonts/BebasNeue/BebasNeue-Light.woff2') format('woff2'),
+    url('/css/fonts/BebasNeue/BebasNeue-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BebasNeue Thin';
-  src: local("BebasNeue-Thin") local('Bebas Neue Thin')
-   url('css/fonts/BebasNeue/BebasNeue-Thin.woff2') format('woff2'),
-    url('css/fonts/BebasNeue/BebasNeue-Thin.woff') format('woff');
+  font-family: 'Bebas Neue';
+  src: url('/css/fonts/BebasNeue/BebasNeue-Thin.woff2') format('woff2'),
+    url('/css/fonts/BebasNeue/BebasNeue-Thin.woff') format('woff');
   font-weight: 100;
-  font-style:normal;
+  font-style: normal;
   font-display: swap;
 }
-
-
 
 stylesheet.css
 /* Clear fix hack */
@@ -75,7 +66,7 @@ stylesheet.css
 
 
 html {
-  font-size: 10px;
+  font-size: 12.4px;
 }
 
 html {
@@ -96,6 +87,7 @@ strong {
 
 h2 {
   font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
+  font-size: 2rem;
 }
 /******************************************
 /* BASE STYLES
@@ -120,10 +112,11 @@ scroll-snap-align: start;
 
 body {
   margin: 0;
-  font-family: "BebasNeue-Regular";
+  font-family: 'Bebas Neue';
   font-size: 1rem;
   font-weight: normal;
   font-style: normal;
+  letter-spacing: 2px;
   line-height: 1.5;
   color: #fff;
   text-align: left;
@@ -650,7 +643,7 @@ body.homepage.is-preload #header:after {
 .water-text {
   background: white;
   position: relative;
-  font-size: 1.4em;
+  font-size: 1em;
   padding: 2%;
   color: #151515;
   font-weight: bolder;
@@ -860,7 +853,7 @@ hr {
 		#top p {
 			font-size: 1.5em;
 			line-height: 1.75em;
-      font-family: 'BebasNeue-Regular';
+      font-family: 'Bebas Neue';
   font-weight: normal;
     font-style: normal;
     
@@ -1682,14 +1675,14 @@ button::-moz-focus-inner {
 
 
 
-#contach2 {
+/* #contach2 {
   font-family: 'Arimo', sans-serif;
   color: #fff;
   font-size: clamp(30px, 6vw, 60px);
   letter-spacing: 2px;
   text-align: center;
   transform: scale(.95, 1);
-}
+} */
 
 
 #contact-2.links {
@@ -1875,17 +1868,22 @@ textarea:valid+label {
   filter: sepia(0.5);
 }
 
+  
+
+
 @media only screen and (max-width: 800px) {
   
   #contact-2 h2 {
-    font-size: clamp(40px, 10vw, 60px);
+    font-size: clamp(30px, 6vw, 20px);
   }
 }
 
 @media only screen and (max-width: 400px) {
   
   #contact-2 h2 {
-    font-size: clamp(30px, 12vw, 60px);
+    /* font-size: clamp(30px, 12vw, 60px); */
+    font-size: 1.3em;
+    margin-left: 10px;
   }
   
  
@@ -2310,7 +2308,7 @@ textarea:valid+label {
   .water-text {
     background: white;
     position: relative;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: -2em -3em;
     color: #151515;
     font-weight: bolder;
