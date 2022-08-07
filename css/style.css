@@ -391,11 +391,11 @@ ul {
         .top-bar__brand {
           color: #ebebeb;
           text-decoration: none;
-          font-size: 45px;
+          font-size: 30px;
           text-transform: uppercase;
           text-align: center;
           transition: 0.25s;
-          margin-left: -2em;
+          margin-left: -3.5em;
           font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
         }
        
