@@ -92,7 +92,7 @@ h2 {
 
 
 .animate__animated .animate__fadeInDown {
-  --animate-duration: 60.6s;
+  --animate-duration: 2.6s;
 }
 
 /******************************************
@@ -397,11 +397,11 @@ ul {
         .top-bar__brand {
           color: #ebebeb;
           text-decoration: none;
-          font-size: 30px;
+          font-size: 25px;
           text-transform: uppercase;
           text-align: center;
           transition: 0.25s;
-          margin-left: -3.5em;
+          margin-left: -4em;
           font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
         }
        
@@ -455,7 +455,7 @@ ul {
         
         .hamburger {
           position: relative;
-          height: 50px;
+          height: 40px;
         }
         .hamburger span {
           width: 50px;
@@ -653,6 +653,7 @@ body.homepage #header {
   padding: 2%;
   color: #151515;
   font-weight: bolder;
+ 
   border-top-right-radius: 30%;
   font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
@@ -665,11 +666,12 @@ body.homepage #header {
   content: '';
   position: absolute;
   inset: 0;
+
   font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
 }
 
 
-/* Charlie */
+/* Char*/
 
 
 hr {
@@ -2314,11 +2316,12 @@ textarea:valid+label {
   .water-text {
     background: white;
     position: relative;
-    font-size: 4rem;
+    font-size: 2.3rem;
     padding: -2em -3em;
     color: #151515;
     font-weight: bolder;
     border-top-right-radius: 30%;
+    transition: all ease-in;
     font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   }
 

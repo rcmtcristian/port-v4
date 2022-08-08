@@ -34,3 +34,9 @@
 }
 
 
+@media screen and (max-width: 668px) {
+  #loader {
+    display:none
+  }
+}
+
