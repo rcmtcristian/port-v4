@@ -79,5 +79,7 @@ animateOne()
 const loader = document.getElementById('loader')
 
 window.addEventListener('load', function(){
+  loader.style.opacity = "0"
   loader.style.display = "none"
+  // loader.fadeOut(10)
 })
