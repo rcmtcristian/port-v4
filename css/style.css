@@ -89,6 +89,12 @@ h2 {
   font-family: 'otf_gluspbold',OTF® Glusp, Times New Roman, Times, serif;
   font-size: 2rem;
 }
+
+
+.animate__animated .animate__fadeInDown {
+  --animate-duration: 2.6s;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -600,9 +606,9 @@ body.homepage #header {
     transition-delay: 0.5s;
   }
 
-body.homepage.is-preload #header:after {
+/* body.homepage.is-preload #header:after {
   opacity: 1;
-}
+} */
 
 
 

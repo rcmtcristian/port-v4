@@ -1,0 +1,36 @@
+#loader {
+  width: 100vw;
+  height: 130vh;
+  background:#5f9ea0 no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  z-index: 100000;
+ 
+
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+}
+
+.loader > * {
+  margin: auto;
+}
+.face {
+
+  background-color: cadetblue;
+  cursor: move;
+  margin-top: -30vh ;
+
+ 
+}
+
+.loadText {
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-size: 40px;
+  
+}
+
+
