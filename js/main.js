@@ -1,8 +1,8 @@
 const scroll = new SmoothScroll('.scrolly [href*="#"]', {
-  speed: 800
+  speed: 800,
 });
 
-(function() {
+(function () {
   if (document.querySelector("#top-nav-toggle")) {
     var navToggle = document.querySelector("#top-nav-toggle");
 
@@ -32,11 +32,8 @@ const scroll = new SmoothScroll('.scrolly [href*="#"]', {
   }
 })();
 
+let twit = document.getElementById("twit");
 
-
-let twit = document.getElementById('twit')
-
-
-twit.addEventListener('mouseover', function(){
-  twit.classList.toggle('animate__rubberBand')
-})
+twit.addEventListener("mouseover", function () {
+  twit.classList.toggle("animate__rubberBand");
+});
