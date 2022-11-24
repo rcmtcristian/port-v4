@@ -73,8 +73,10 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 });
 
-//animation fades out after everything is loaded
+//animation fades slowly out after everything is loaded
+
 window.addEventListener("load", function () {
-  loader.style.opacity = "0";
-  loader.style.display = "none";
+  // loader.style.opacity = "0";
+  // loader.style.display = "none";
+  loader.classList.toggle("fade-out");
 });
