@@ -4,8 +4,9 @@ const greetings = [
   "Hola!",
   "Ciao!",
   "はじめまして",
-  "Salut",
-  "Howdy",
+  "Salut!",
+  "Howdy!",
+  "안녕",
 ];
 
 let currentGreetingIndex = 0;
