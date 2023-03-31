@@ -15,18 +15,20 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/loader.css">
 	</head>
 		<!--nav-->
 		<body class="homepage is-preload">
 
-      <div id="loader" fetchpriority="high">
-        <canvas class="face" width="240" height="240" fetchpriority="high"> </canvas>
-            <h4 class="loadText" fetchpriority="high">LOADING</h4>
-      </div>
-  
+<div class="overlay" id="loader">
+  <canvas class="face" width="240" height="240" fetchpriority="high">                           </canvas>
+  <h4 class="loadText" fetchpriority="high">LOADING</h4>
+</div>
+
+
+
+
 		<section id="page-wrapper">
 		
 			<nav id="nav">
@@ -77,13 +79,14 @@
 							<header>
 								<h1>
 									<div class="water-text animate__animated animate__fadeInDown">
-										<h6> <a href="index.html" id="logo"> RCMTC  WELCOME</a>
+										<h6> <a href="index.html" id="logo" class="greeting"> Hello!</a> 
+                      <br> I'm Cristian
 										
 										</h6>
 									</div>								
 								</h1>
 								<hr class="smll" >
-								<p>Nice To Meet You, I'm your next Software Engineer </p>
+								<p>A creative software developer, with a specialization in Frontend Development.  </p>
 							</header>
 										<footer class="scrolly">
 											<a href="#top">
@@ -606,7 +609,10 @@ data-hover-effect="goo">
 			<script src="js/jquery.scrolly.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/Zdog.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/header-animation.js"></script>
 	</body>
 </html>
