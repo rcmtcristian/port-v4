@@ -95,6 +95,13 @@ h2 {
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+.spline {
+  display: block;
+  z-index: -2;
+  /* background-color: red; */
+  width: 100%;
+}
 .scrolly {
   scroll-behavior: smooth;
 }
@@ -927,7 +934,12 @@ hr {
 /*******************************************/
 
 .row > .col-4 {
-  width: 33.33333%;
+  width: 130%;
+  height: 100%;
+  position: absolute;
+  top: 106%;
+  /* background-color: red; */
+  margin-left: -30em;
 }
 
 .row > .col-5-large {
@@ -1792,6 +1804,10 @@ textarea:valid + label {
   .row > * {
     padding: 25px 0 0 25px;
   }
+
+  .centered {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -1839,9 +1855,11 @@ textarea:valid + label {
     margin: 0;
   }
 }
-@media (min-width: 980px) {
-  #top .row .col-1 {
-    padding-left: 9em;
+
+@media screen and (max-width: 1090px) {
+  .spline {
+    visibility: hidden;
+    display: none;
   }
 }
 
@@ -1931,7 +1949,8 @@ textarea:valid + label {
 
   .centered {
     display: block;
-    margin: 0 4em 4em 0em;
+    margin: 0 -9em 4em 0em;
+    background-color: red;
   }
 
   body {

@@ -40,10 +40,11 @@
     );
   };
 
-  animateOut_2();
+  // animateOut_2();
+  setTimeout(animateOut_2, 7000);
 
-  btn.onclick = function () {
-    animateIn();
-    setTimeout(animateOut_2, 2000);
-  };
+  // btn.onclick = function () {
+  //   animateIn();
+  //   setTimeout(animateOut_2, 4000);
+  // };
 })();
