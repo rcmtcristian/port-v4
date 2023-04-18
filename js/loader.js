@@ -41,7 +41,7 @@
   };
 
   // animateOut_2();
-  setTimeout(animateOut_2, 7000);
+  setTimeout(animateOut_2, 8000);
 
   // btn.onclick = function () {
   //   animateIn();
