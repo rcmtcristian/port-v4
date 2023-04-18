@@ -129,7 +129,7 @@ body {
   color: #fff;
   text-align: left;
   background-color: #151515;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 section {
