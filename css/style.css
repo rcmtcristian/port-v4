@@ -659,6 +659,36 @@ body.homepage #header:after {
   font-family: "otf_gluspbold", OTF® Glusp, Times New Roman, Times, serif;
 }
 
+.water-text-404 {
+  /* background: white; */
+  position: relative;
+  /* font-size: 1em; */
+  padding: 2%;
+  color: #151515;
+  font-weight: bolder;
+  background-clip: text;
+  font-family: "otf_gluspbold", OTF® Glusp, Times New Roman, Times, serif;
+}
+.water-text-404::before {
+  background-image: url("https://i.postimg.cc/htvysfzX/wave.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: lighten;
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  font-family: "otf_gluspbold", OTF® Glusp, Times New Roman, Times, serif;
+}
+
+.decription-four-oh-four {
+  font-size: 1em;
+
+  color: #151515;
+  text-align: center;
+
+  font-family: "otf_gluspbold", OTF® Glusp, Times New Roman, Times, serif;
+}
 /* Char*/
 
 hr {
