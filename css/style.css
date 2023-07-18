@@ -364,7 +364,7 @@ ul {
 
 .top-bar {
   display: flex;
-  min-height: 90px;
+  min-height: 70px;
   background: #000;
   color: #ebebeb;
   align-items: center;
@@ -648,7 +648,7 @@ body.homepage #header:after {
 }
 
 .water-text::before {
-  background-image: url("https://i.postimg.cc/htvysfzX/wave.gif");
+  background-image: url("/images/waves.avif");
   height: 3.7em;
   background-position: 20% 1%;
   mix-blend-mode: lighten;
@@ -670,7 +670,7 @@ body.homepage #header:after {
   font-family: "otf_gluspbold", OTF® Glusp, Times New Roman, Times, serif;
 }
 .water-text-404::before {
-  background-image: url("https://i.postimg.cc/htvysfzX/wave.gif");
+  background-image: url("/images/waves.avif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   mix-blend-mode: lighten;
@@ -1540,26 +1540,31 @@ button::-moz-focus-inner {
 ************************************/
 
 #contact-2 {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 .contact-box {
-  width: clamp(100px, 90%, 1000px);
-  margin: 80px 50px;
-  display: flex;
+  /* width: clamp(100px, 90%, 1000px); */
+  /* margin: 80px 50px; */
+  /* display: flex; */
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-links,
 .contact-form-wrapper {
-  width: 50%;
-  padding: 8% 5% 10% 5%;
+  backdrop-filter: blur(1em);
+  /* width: 50%;*/
+  padding: 0em 2em;
+  border-radius: 1em;
 }
 
 .contact-links {
-  background-image: url("https://i.postimg.cc/kX4BgmRQ/output-onlinegiftools-2.gif");
+  background-image: url("../images/waves.avif");
+  backdrop-filter: invert(80%);
   background: radial-gradient(
       circle at 55% 92%,
       rgb(44, 99, 94) 1 0 12%,
@@ -1575,7 +1580,7 @@ button::-moz-focus-inner {
     rgb(44, 99, 94);
 
   background-position: 18% 19%;
-  filter: blur();
+  /* filter: blur(0.2rem); */
   background-size: cover;
 }
 
@@ -1615,11 +1620,13 @@ button::-moz-focus-inner {
   transform: scale(.95, 1);
 } */
 
-#contact-2.links {
+.links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
+  flex-direction: row;
+  padding-top: 1em;
+  margin: 2em 0em 1em 0em;
 }
 
 .link {
@@ -1629,6 +1636,7 @@ button::-moz-focus-inner {
   text-align: center;
   line-height: 3.3em;
   font-weight: bold;
+  width: fit-content;
 }
 .links img {
   margin-right: 2px;
@@ -2174,7 +2182,7 @@ textarea:valid + label {
   }
 
   .water-text::before {
-    background-image: url("https://i.postimg.cc/htvysfzX/wave.gif");
+    background-image: url("/images/waves.avif");
     height: 3em;
     background-position: 20% 1%;
     mix-blend-mode: lighten;
