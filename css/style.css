@@ -357,8 +357,8 @@ body {
   display: block;
   margin: 2em auto;
   max-width: 3%;
-  width: 2%;
-  height: 2%;
+  width: 3%;
+  height: 3%;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -368,11 +368,6 @@ body {
 .logo:hover {
   filter: invert(100%);
   scale: 1.1;
-  display: block;
-  margin: 2em auto;
-  max-width: 3%;
-  width: 2%;
-  height: 2%;
 }
 
 .icon {
