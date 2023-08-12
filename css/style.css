@@ -200,6 +200,18 @@ body {
   z-index: -2;
 }
 
+@screen and (max-width: 767px) {
+  .bg {
+    background: transparent
+      url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation 0.2s infinite;
+    opacity: 0.4;
+    visibility: visible;
+    z-index: -2;
+  }
+}
+
 @keyframes bg-animation {
   0% {
     transform: translate(0, 0);
