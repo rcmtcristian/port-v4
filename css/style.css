@@ -89,6 +89,7 @@ html {
     --colors-accent8: #e7746f;
     --colors-accent9: #216485;
     --colors-accent10: rgb(33, 38, 49);
+    --colors-accent11: rgb(104, 88, 93);
   }
 }
 
@@ -206,7 +207,7 @@ body {
       url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation 0.2s infinite;
-    opacity: 0.4;
+    opacity: 0.2;
     visibility: visible;
     z-index: -2;
   }
@@ -551,6 +552,7 @@ body {
 }
 
 .blurred {
+  color: var(--colors-accent11);
   filter: blur(5px);
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -562,6 +564,7 @@ body {
 }
 
 .blurred:hover {
+  color: var(--colors-accent1);
   filter: blur(0px);
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
