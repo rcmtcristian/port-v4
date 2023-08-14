@@ -27,13 +27,72 @@ html {
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none;
+  /* -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
   scroll-behavior: smooth;
 }
+
+p::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+article::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+span::selection {
+  background: var(--colors-accent9);
+  color: var(--colors-accent1);
+}
+
+div::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+a::selection {
+  background: var(--colors-accent8);
+  color: var(--colors-accent1);
+}
+
+h1::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+h2::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+h3::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+h4::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+strong::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+time::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+img::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
 /******************************************
 /* FONTS
 /*******************************************/
