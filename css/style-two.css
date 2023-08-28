@@ -205,6 +205,9 @@ img::selection {
   margin: 0.8em 0;
 }
 
+.accent-two {
+  color: var(--colors-accent5);
+}
 .bg {
   position: fixed;
   top: -50%;
