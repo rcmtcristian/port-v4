@@ -13,6 +13,27 @@ html {
   height: 0;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #9a9c9e #dfdddd;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9a9c9e;
+  border-radius: 2px;
+  border: 3px solid #9a9c9e;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
