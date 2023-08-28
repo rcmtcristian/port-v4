@@ -173,26 +173,27 @@ img::selection {
   }
 }
 
+/* ===== Scrollbar CSS ===== */
 /* Firefox */
-/* * {
+* {
   scrollbar-width: auto;
-  scrollbar-color: var(--colors-accent12);
-} */
+  scrollbar-color: #9a9c9e #dfdddd;
+}
 
-/* Chrome, Edge, and Safari  */
-/* *::-webkit-scrollbar {
-  width: 16px;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--colors-accent12);
+  background: #424242;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--colors-accent12);
-  border-radius: 120px;
-  border: 3px solid var(--colors-accent2);
-} */
+  background-color: #9a9c9e;
+  border-radius: 2px;
+  border: 3px solid #9a9c9e;
+}
 
 .text-style-one {
   font-family: pangrambold, "Source Sans Pro", Arial, sans-serif;
