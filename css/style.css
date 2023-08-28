@@ -633,18 +633,20 @@ body {
 
 .blurred {
   color: var(--colors-accent11);
+  
   filter: blur(5px);
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  transition: filter 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   z-index: -1;
   /* transform: scale(0.4); */
 }
 
 .blurred:hover {
-  color: var(--colors-accent1);
+  color: var(--colors-accent5);
+   font-family: pangramextralight, "Source Sans Pro", Arial,
   filter: blur(0px);
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
