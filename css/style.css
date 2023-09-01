@@ -170,6 +170,7 @@ img::selection {
     --colors-accent10: rgb(33, 38, 49);
     --colors-accent11: rgb(209, 172, 143);
     --colors-accent12: rgb(22, 22, 22);
+    --colors-accent13: rgba(33, 34, 36, 0.9);
   }
 }
 
@@ -290,6 +291,64 @@ body {
 
 .paragraph {
   color: var(--colors-accent5);
+}
+
+.home {
+  margin-bottom: 5em;
+}
+.home::before,
+.home::after {
+  content: "";
+  height: 4rem;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+}
+.home::before {
+  background: var(--colors-accent13);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e1e",endColorstr="#1e1e1e",GradientType=1);
+  top: 0;
+}
+.home::after {
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(201, 113, 100, 0) 0%,
+    var(--colors-accent13) 94%,
+    var(--colors-accent13) 150%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e1e",endColorstr="#1e1e1e",GradientType=1);
+  bottom: 0;
 }
 
 .bg {
