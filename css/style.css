@@ -307,6 +307,7 @@ body {
 }
 .home::before {
   background: var(--colors-accent13);
+
   background: -moz-linear-gradient(
     0deg,
     rgba(201, 113, 100, 0) 0%,
