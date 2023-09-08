@@ -440,6 +440,9 @@ body {
   height: 100%;
 }
 
+.logo-stack {
+  z-index: 3;
+}
 .logo-stack:hover * {
   filter: invert(95%);
 }
