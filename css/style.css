@@ -853,7 +853,7 @@ body {
   position: relative;
   touch-action: pan-x;
   pointer-events: auto;
-  line-height: 0.9rem;
+  line-height: 0.7rem;
 
   /* pointer: grab; */
   /* overflow-x: hidden; */
@@ -1318,7 +1318,7 @@ body {
   .carousel {
     padding-left: 0;
     padding-right: 0;
-    height: 40vh;
+    height: 44vh;
   }
 
   .carousel__activator:nth-of-type(n):checked
@@ -1367,7 +1367,7 @@ body {
 
   .carousel__item--mobile-in-1 {
     width: 92vw;
-    height: 40vh;
+    height: 42vh;
     overflow-y: hidden;
   }
 
