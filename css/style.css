@@ -236,8 +236,10 @@ body {
   font-family: pangramregular, "Source Sans Pro", Arial, sans-serif;
   font-size: 1.1rem;
   color: var(--colors-accent1);
-  font-weight: 300;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+  /* letter-spacing: 0.05em; */
   overflow-x: hidden;
 }
 
@@ -578,7 +580,8 @@ footer > * {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50vw;
+  width: clamp(320px, 100%, 870px);
+
   line-spacing: clamp(1.5rem, 0.9vw + 1.3rem, 1.88rem);
 }
 
@@ -785,7 +788,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(50vw, 100%, 50em);
+  /* width: clamp(50vw, 100%, 50em); */
+  width: clamp(320px, 100%, 870px);
+
   margin: 0 auto;
 }
 
@@ -848,6 +853,8 @@ body {
   position: relative;
   touch-action: pan-x;
   pointer-events: auto;
+  line-height: 0.9rem;
+
   /* pointer: grab; */
   /* overflow-x: hidden; */
 }
