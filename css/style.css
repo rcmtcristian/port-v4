@@ -1130,7 +1130,7 @@ body {
   width: clamp(min(10vw, 20rem), 800px, max(90vw, 55rem));
   touch-action: pan-x;
   pointer-events: auto;
-  cursor: grab;
+  /* cursor: grab; */
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
