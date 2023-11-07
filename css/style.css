@@ -93,6 +93,16 @@ img::selection {
   color: var(--colors-accent10);
 }
 
+ul::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
+li::selection {
+  background: var(--colors-accent1);
+  color: var(--colors-accent10);
+}
+
 /******************************************
 /* FONTS
 /*******************************************/
