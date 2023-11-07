@@ -1143,10 +1143,204 @@ svg {
 */
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 .ch-expand-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.8);
+}
+/* bundle */
+.bundle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+.price-container {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: min-content;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.bundle {
+  padding: 1em;
+  /* width: 50%; */
+}
+
+.badge {
+  background-color: rgb(33, 100, 133);
+  border-radius: 20px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  padding: 0.2em;
+  width: 60%;
+  margin: 0.1em 0;
+}
+
+.badge-outline {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: none;
+  font-size: 0.7rem;
+
+  /* transform-origin: 50% 50% 0px; */
+}
+.badge-bundle {
+  border-radius: 20px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  padding: 0.2em;
+  /* width: 40%; */
+  margin: 0.1em 0;
+}
+
+.badge-outline-bundle {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: none;
+  font-size: 0.7rem;
+
+  /* transform-origin: 50% 50% 0px; */
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+}
+
+.development-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.development-options * {
+  margin: 0.4em 0;
+  font-size: 0.9rem;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(33, 100, 133);
+  --c2: #d4d4d4;
+}
+
+/* .wrapper {
+  min-width: min(40rem, 100%);
+} */
+
+.development-options > li:hover {
+  color: rgba(33, 34, 36, 0.9);
+  background: #fbfcfd;
+  transition: all 0.2s ease-in-out;
+}
+
+.development-options > li::selection {
+  background: #fbfcfd;
+  color: rgba(33, 34, 36, 0.9);
+}
+.box {
+  font-size: 0.77em;
+  /* margin: max(1rem, 3vw); */
+  border-radius: 0.5em;
+  border: 0.1rem solid;
+  padding: 0.2em;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.1turn,
+      var(--c2) 0.15turn
+    )
+    20;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c2) 40%
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+@media only screen and (max-width: 1024px), screen and (max-height: 600px) {
+  .bundle-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+  }
 }
