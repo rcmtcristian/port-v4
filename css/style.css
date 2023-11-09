@@ -1295,7 +1295,7 @@ body {
 }
 .carousel__item:nth-child(8) .demo-content:hover {
   background-color: var(--colors-accent9);
-  background: url("../assets/Images/9.webp") no-repeat center center;
+  background: url("../assets/videos/10.webp") no-repeat center center;
   background-size: cover;
 }
 
