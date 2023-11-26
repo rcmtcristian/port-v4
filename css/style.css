@@ -750,7 +750,7 @@ body {
   margin-left: 1em;
   vertical-align: middle;
 }
-4 .accent-with-icon > .accent-icon-two {
+.accent-with-icon > .accent-icon-two {
   display: inline;
   /* width: 1em;
   height: 1em; */
@@ -1412,6 +1412,10 @@ body {
     width: 30%;
     height: 10vh;
     overflow: hidden;
+  }
+
+  iframe {
+    display: none;
   }
 }
 @media screen and (max-width: 200px) {
