@@ -125,9 +125,8 @@ li::selection {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+1f??, U+0370-03ff;
+  unicode-range: U+1F00-1FFF, U+0370-03FF;
 }
-
 @font-face {
   font-family: "pangramextralight";
   src: url("../assets/fonts/pangram-extralight-webfont.woff2") format("woff2"),
@@ -154,14 +153,14 @@ li::selection {
     U+feff, U+fffd;
 }
 
-@font-face {
+/* @font-face {
   font-family: "pangramregular";
   src: local("Arial");
   ascent-override: 90.2%;
   descent-override: 22.48%;
   line-gap-override: 0%;
   size-adjust: 107.4%;
-}
+} */
 
 /******************************************
 /* BASE STYLES
