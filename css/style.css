@@ -823,6 +823,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: -8.6em;
+  position: relative;
+  z-index: 2;
 }
 
 .divided {
@@ -1075,9 +1078,6 @@ body {
 }
 
 .carousel__screen {
-  /* overflow: scroll; */
-  /* margin-left: clamp(-10em, -5em, 5em);
-  margin-right: clamp(-30em, em, -5em); */
   margin-left: -16px;
   margin-right: -16px;
 }
@@ -1146,13 +1146,18 @@ body {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
+  overflow: hidden;
 }
+
 .demo-content-inner {
   color: var(--colors-accent1);
   display: flex;
   height: 100%;
   width: 100%;
-  pointer: grab;
+  min-width: 100%;
+  /* background: red; */
+  /* background: red; */
+  /* cursor: grab; */
 }
 
 .inner-text,
@@ -1194,19 +1199,62 @@ body {
 /* .inner-text:nth-of-type(3) {
   color: grey;
 } */
-.carousel__item:nth-child(1) .demo-content {
+/* .carousel__item:nth-child(1) .demo-content {
   background-color: var(--colors-accent9);
   background: url("../assets/videos/1.webp") no-repeat center center;
   background-size: cover;
   cursor: pointer;
 }
 .carousel__item:nth-child(1) .demo-content:hover {
-  background-color: red;
   background-color: var(--colors-accent9);
   background: url("../assets/Images/17.webp") no-repeat center center;
   background-size: cover;
+} */
+
+.carousel__item:nth-child(1) .demo-content {
+  position: relative;
+  background-color: var(--colors-accent9);
+  cursor: pointer;
+  /* overflow: hidden; */
 }
 
+/* Create a background wrapper for the images */
+.carousel__item:nth-child(1) .demo-content::before,
+.carousel__item:nth-child(1) .demo-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none; /* Allow clicks to pass through to links */
+}
+
+.carousel__item:nth-child(1) .demo-content::before {
+  background-image: url("../assets/videos/1.webp");
+  /* Can change the way in which the image slide in*/
+  clip-path: polygon(0 0, 100% 0, 150% 100%, 0% 100%);
+  transition: clip-path 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+}
+
+.carousel__item:nth-child(1) .demo-content::after {
+  background-image: url("../assets/Images/17.webp");
+  transform: scale(1.1);
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 0;
+}
+
+.carousel__item:nth-child(1) .demo-content:hover::before {
+  clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+}
+
+.carousel__item:nth-child(1) .demo-content:hover::after {
+  transform: scale(1);
+}
 .carousel__item:nth-child(2) .demo-content {
   background: url("../assets/Images/13.webp") no-repeat center center;
   /* background-position: -130px 5px; */
